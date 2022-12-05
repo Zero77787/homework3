@@ -64,7 +64,37 @@ public class Main {
 
         System.out.println("Цикл While ");
         System.out.println("Задание 1: ");
+        int salary3 = 15000;
+        int total3 = 0;
+        int i = 0;
+        while (total3 < 2_459_000) {
+            total3 = total3 + salary3;
+            System.out.println("Месяц " + i++ + " сумма накоплений равна: " + total3 + " рублей");
+        }
+        System.out.println("Задание 2: ");
+        int start = 1;
+        while (start < 11 && start > 0) {
+            System.out.print(" " + start + " ");
+            start = start + 1;
+        }
+            System.out.println();
+            for (int s = 10; s < 11 && s > 0; s--) {
+                System.out.print(" " + s + " ");
+            }
 
+            {
+                System.out.println();
+                System.out.println("Задание 3:");
+                int populationPeople = 12_000_000;
+                int bornPeople = 17;
+                int deathPeople = 8;
+                int bd = bornPeople - deathPeople;
+                for (int k = 1; k <= 10; k++) {
+                    populationPeople += populationPeople * bd / 1000;
 
-
+                    System.out.println("Год " + k + " численность населения составляет " + populationPeople);
+                }
+            }
+        }
     }
+
